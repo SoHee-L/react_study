@@ -1,8 +1,7 @@
-import { useRef, useState } from 'react';
+import {useEffect, useRef, useState} from 'react';
 import './App.css';
 import DiaryEditor from './DiaryEditor';
 import DiaryList from './DiaryList';
-import Lifecycle from './Lifecycle';
 
 //comments를 사용하기 위한 url 주소
 //https://jsonplaceholder.typicode.com/comments
@@ -12,9 +11,27 @@ function App() {
   const dataId = useRef(0);
   //api를 호출하는 함수 getData가 promise로 반환하는 비동기함수로 만듬. 
   const getData = async()=>{
-    const res = await fetch('https://jsonplaceholder.typicode.com/comments').then((res)=>res.json());
-    console.log(res);
-  }
+    const res = await fetch('https://jsonplaceholder.typicode.com/comments')
+        .then((res)=>res.json());
+    //데이터를 20개만 추려내기 위해 사용.
+    const initData = res.slice(0,20).map((it)=>{
+      return{
+        author : it.email,
+        content : it.body,
+        emotion : Math.floor(Math.random()*5)+1,
+        //Math.random은 정수가 반환x, 소수점 자리가 반환되기 때문에 Math.floor라는 정수를 바꿔주는 함수 활용.
+        create_date: new Date().getTime(),
+        id : dataId.current++
+      }
+    })
+
+    setData(initData);
+  };
+  //getData는 app 컴포넌트가 mount 되자마자 호출할 것.
+  useEffect(()=>{
+    getData();
+  },[])
+
 
   const onCreate = (author, content, emotion) =>{
     const create_date = new Date().getTime();
@@ -49,7 +66,6 @@ function App() {
   }
   return (
     <div className="App">
-      <Lifecycle/>
       <DiaryEditor onCreate ={onCreate}/>
       <DiaryList onEdit={onEdit} onRemove={onRemove} diaryList={data}/>
 
