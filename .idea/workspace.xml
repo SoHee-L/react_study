@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0aba61bf-7d7a-4024-b52f-051d197c35b2" name="Changes" comment="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React Lifecycle 제어까지 정리.">
+    <list default="true" id="0aba61bf-7d7a-4024-b52f-051d197c35b2" name="Changes" comment="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React API 호출 정리.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplediary/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/simplediary/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simplediary/src/Lifecycle.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682488357801</updated>
-      <workItem from="1682488358832" duration="7541000" />
+      <workItem from="1682488358832" duration="8820000" />
     </task>
     <task id="LOCAL-00001" summary="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React Lifecycle 제어까지 정리.">
       <created>1682551811421</created>
@@ -79,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682551811421</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React API 호출 정리.">
+      <created>1682559754041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682559754041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React Lifecycle 제어까지 정리." />
-    <option name="LAST_COMMIT_MESSAGE" value="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React Lifecycle 제어까지 정리." />
+    <MESSAGE value="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React API 호출 정리." />
+    <option name="LAST_COMMIT_MESSAGE" value="[제목] '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지' 공부 기록. section 5.React API 호출 정리." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
